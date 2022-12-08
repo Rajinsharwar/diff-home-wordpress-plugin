@@ -38,7 +38,7 @@ function diff_home_admin(){
       if(empty($_POST['page_for_logged_in'])) {
           
         } else {
-          $admin_selected_in=$_POST['page_for_logged_in'];
+          $admin_selected_in=sanitize_text_field( $_POST['page_for_logged_in'] );
           update_option('page_for_logged_in', $admin_selected_in, $autoload = 'yes');
         }
         ?>
@@ -78,13 +78,13 @@ function diff_home_admin(){
         
         ?>
 
-        <!-- Updating Value in the DB on input for logged in page -->
+        <!-- Updating Value in the DB on input for logged out page -->
 
         <?php
         if(empty($_POST['page_for_logged_out'])) {
             
           } else {
-            $admin_selected_out=$_POST['page_for_logged_out'];
+            $admin_selected_out=sanitize_text_field( $_POST['page_for_logged_out'] );
             update_option('page_for_logged_out', $admin_selected_out, $autoload = 'yes');
           }
           ?>
