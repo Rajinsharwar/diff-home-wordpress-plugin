@@ -4,7 +4,7 @@
  * Description: Set different Homepage for your Logged IN and Logged OUT users. Increase your engagement, and let your users see what they should be seeing.
  * Author: Rajin Sharwar
  * Author URI: https://linkedin.com/in/rajinsharwar
- * Version: 1.2.0
+ * Version: 1.2.1
  * Text Domain: diff_home
  */
 

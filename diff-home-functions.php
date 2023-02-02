@@ -6,8 +6,6 @@ function diff_home_function(){
   $logged_in_page = get_option('page_for_logged_in');
 
   if ($logged_in_page != 1){
-    error_log($logged_in_page);
-
     if ( !current_user_can( 'manage_options' ) ) {
       add_filter( 'pre_option_page_on_front', function($p) use ($logged_in_page) {
         if ( is_user_logged_in() ) {
