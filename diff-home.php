@@ -4,7 +4,7 @@
  * Description: Set different Homepage for your Logged IN and Logged OUT users. Increase your engagement, and let your users see what they should be seeing.
  * Author: Rajin Sharwar
  * Author URI: https://linkedin.com/in/rajinsharwar
- * Version: 1.1.0
+ * Version: 1.2.0
  * Text Domain: diff_home
  */
 
@@ -47,9 +47,6 @@ if ( ! function_exists( 'diff_home' ) ) {
 // Adding values in the DB
 if ( !isset( get_option( 'page_for_logged_in' )['1'] ) ) {
     add_option ('page_for_logged_in', '1');
-}
-if ( !isset( get_option( 'page_for_logged_out' )['1'] ) ) {
-    add_option ('page_for_logged_out', '1');
 }
 
 //Redirect Amdin on plugin Activation
