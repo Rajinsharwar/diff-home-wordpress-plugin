@@ -2,7 +2,7 @@
 
 // Initializing the main functions of the plugin
 
-function diff_home_function( $home_page ) {
+function diff_home_function( $home_page_diff_home ) {
     $diff_home_logged_in_page = get_option('page_for_logged_in');
 
     if ( !current_user_can( 'manage_options' ) ) {
@@ -13,7 +13,7 @@ function diff_home_function( $home_page ) {
             }
         }
     }
-
+    
     return $home_page_diff_home;
 }
 
