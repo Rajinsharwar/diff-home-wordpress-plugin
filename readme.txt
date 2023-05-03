@@ -11,6 +11,8 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 == Description ==
 Set different Homepage for your Logged IN and Logged OUT users. Increase your engagement, and let your users see what they should be seeing.
 
+It's a powerful and lightweight WordPress plugin that lets you set different homepage for your logged-in and logged-out users. With this plugin, you can boost user engagement by showing tailored content to your visitors and members. Whether you want to welcome new visitors with an overview of your site or provide personalized content for your registered users, this plugin can help you deliver the right message to the right audience. Its intuitive settings make it easy to set up and use, without requiring any coding skills or technical expertise. Download the plugin today and start creating custom homepages that drive results!
+
 == Installation ==
 Please follow the below steps for installing this plugin:-
 
