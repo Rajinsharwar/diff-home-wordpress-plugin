@@ -2,7 +2,7 @@
 Contributors: rajinsharwar
 Tags: different homepage, visibility, rules, different home
 Requires at least: 3.9
-Tested up to: 6.1.1
+Tested up to: 6.2
 Requires PHP: 5.6
 Stable tag: 1.3.0
 License: GPLv2 or later
