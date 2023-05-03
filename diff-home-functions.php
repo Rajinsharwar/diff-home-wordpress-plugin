@@ -2,31 +2,20 @@
 
 // Initializing the main functions of the plugin
 
-function diff_home_function(){
-  $logged_in_page = get_option('page_for_logged_in');
+function diff_home_function( $home_page ) {
+    $diff_home_logged_in_page = get_option('page_for_logged_in');
 
-  if ($logged_in_page != 1){
     if ( !current_user_can( 'manage_options' ) ) {
-      add_filter( 'pre_option_page_on_front', function($p) use ($logged_in_page) {
         if ( is_user_logged_in() ) {
-          $page = get_page_by_path( $logged_in_page );
-          return $page->ID ;
-        } else {
-          return $p;
+            if ( $diff_home_logged_in_page != 0 ) {
+                $diff_home_page = get_page_by_path( $diff_home_logged_in_page );
+                $home_page_diff_home = $diff_home_page->ID;
+            }
         }
-      });
-    
-      add_filter( 'pre_option_show_on_front', function($p) use ($logged_in_page) {
-        if ( is_user_logged_in() ) {
-          return 'page';
-        } else {
-          return $p;
-        }
-      });
     }
 
-  }
-
+    return $home_page_diff_home;
 }
 
-add_action('init', 'diff_home_function');
+add_filter( 'option_page_on_front', 'diff_home_function', 10, 1 );
+add_filter( 'option_show_on_front', function() { return 'page'; } );
