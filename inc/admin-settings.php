@@ -36,7 +36,7 @@ function diff_home_admin(){
 
     <?php
     print(
-        __( 'Homepage for Logged IN user: ' ));
+        __( 'Homepage for Logged IN user: ', 'diff-home' ));
     ?>
     </br>
     </br>
@@ -82,11 +82,11 @@ function diff_home_admin(){
       </br>
       <?php
       print(
-          __( 'Homepage for Logged OUT user: ' ));
+          __( 'Homepage for Logged OUT user: ', 'diff-home' ));
       ?>
       </br>
       </br>
-      <?php echo '<b>Please choose the Homepage for the Logged-out users/visitors by navigating under Settings > Reading > Your homepage displays > A static page (select below) </b>'; ?>
+      <?php echo __( '<b>Please choose the Homepage for the Logged-out users/visitors by navigating under Settings > Reading > Your homepage displays > A static page (select below) </b>', 'diff-home' );?>
 
     <!-- Submit Button -->
     <?php submit_button(); ?>
