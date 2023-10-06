@@ -12,7 +12,7 @@ function diff_home_admin(){
 
     <!-- Displaying the Warning Message -->
     <div class="diff-home-warning">
-      <p class="diff-home-warning-text"><strong>Disclaimer:</strong> As your logged-in as an Administrator of this website, you will always the seeing the page that you selected from the "Settings > General > Reading > Homepage" as your Homepage while logged in. You will be needing to create a test account of Subscriber, or of any other User Role to test if the page set for the Logged In user is working correctly. We disabled our plugin's functionality for the users of Administrators role, to avoid any conflicts with some page builders, like Elementor, WP Bakery etc. </p>
+      <p class="diff-home-warning-text"><strong>Disclaimer:</strong> As you logged in as an Administrator of this website, you will always see the page that you selected from the "Settings > General > Reading > Homepage" as your Homepage while logged in. You will need to create a test account of Subscriber, or of any other User Role to test if the page set for the Logged In user is working correctly. We disabled our plugin's functionality for the users of Administrators role, to avoid any conflicts with some page builders, like Elementor, WP Bakery, etc. </p>
     </div>
 
     <!-- The Style of the Warning Banner -->
