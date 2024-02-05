@@ -2,9 +2,9 @@
 Contributors: rajinsharwar
 Tags: different homepage, visibility, rules, different home
 Requires at least: 3.9
-Tested up to: 6.3.1
+Tested up to: 6.4.3
 Requires PHP: 5.6
-Stable tag: 1.3.4
+Stable tag: 2.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -46,3 +46,12 @@ Yes, this will work on any sort of websites. We hav not found any known issue wi
 
 == Screenshots ==
 1. Admin View
+
+== Changelog ==
+
+= 2.0.0 =
+* Updated freemius SDK
+* Added new option to be able to add any post types as the frontpage. This was previously restricted to only pages.
+
+= 1.3.5 =
+* Fixed issue with Cross-Site Scripting.
