@@ -34,7 +34,7 @@ function diff_home_function($home_page_diff_home)
     if (!current_user_can('manage_options')) {
         if (is_user_logged_in()) {
 
-            if ($diff_home_logged_in_page != 0) {
+            if ($diff_home_logged_in_page != false) {
                 $diff_home_page = get_page_by_path($diff_home_logged_in_page, OBJECT, $all_post_types);
                 if ($diff_home_page) {
                     $home_page_diff_home = $diff_home_page->ID;

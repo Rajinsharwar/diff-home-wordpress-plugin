@@ -4,7 +4,7 @@ Tags: different homepage, visibility, rules, different home
 Requires at least: 3.9
 Tested up to: 6.4.3
 Requires PHP: 5.6
-Stable tag: 2.0.0
+Stable tag: 2.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -48,6 +48,9 @@ Yes, this will work on any sort of websites. We hav not found any known issue wi
 1. Admin View
 
 == Changelog ==
+
+= 2.0.1 =
+* Simple fix for edge case.
 
 = 2.0.0 =
 * Updated freemius SDK
